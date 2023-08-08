@@ -1,0 +1,17 @@
+
+windows:
+  - name: servers-four-panes
+    root: ~/code/phoenix/phoenix-api
+    layout: tiled
+    panes:
+      - commands:
+        - docker-compose -f docker-compose-development-mac-os.yml up
+      - commands:
+        - cd ..
+        - cd phoenix-ui
+      - commands:
+        - RAILS_ENV=local bundle exec sidekiq
+      - commands:
+        - rails s -e local
+        focus: true
+

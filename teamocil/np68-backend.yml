@@ -1,0 +1,15 @@
+windows:
+  - name: servers-two-panes
+    root: ~/workerspace
+    layout: tiled
+    panes:
+      - commands:
+        - cd workspace
+        - cd np68-backend
+        - service mysql stop
+        - docker compose up
+        focus: true
+      - commands:
+        - cd workspace
+        - cd np68-frontend
+        - yarn start

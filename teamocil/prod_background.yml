@@ -1,0 +1,13 @@
+windows:
+  - name: ACC - Background
+    root: ~/Code/sample/www
+    layout: tiled
+    panes:
+      - ssh deployer@col-phx-pbj1.conseur.org
+      - ssh deployer@col-phx-pbj2.conseur.org
+      - ssh deployer@col-phx-pbj3.conseur.org
+      - ssh deployer@col-phx-pbj4.conseur.org
+      - ssh deployer@col-phx-pbj5.conseur.org
+      - ssh deployer@col-phx-pbj6.conseur.org
+      - ssh deployer@col-phx-pbj7.conseur.org
+      - ssh deployer@col-phx-pbj8.conseur.org
